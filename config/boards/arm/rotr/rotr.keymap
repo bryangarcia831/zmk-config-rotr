@@ -16,13 +16,13 @@
 
 		default_layer {
 			//PREV | PLAY/PAUSE | NEXT
-			bindings = <&kp C_MUTE &lt 4 F13 &kp C_PP>;
+			bindings = <&kp C_BRIGHTNESS_DEC &lt 4 F13 &kp C_BRIGHTNESS_INC>;
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
 		};
-		one {
+		shift {
 			//PREV | PLAY/PAUSE | NEXT
-			bindings = <&kp C_PREV &lt 4 C_PP &kp C_NEXT>;
-			sensor-bindings = <&inc_dec_kp C_BRIGHTNESS_INC C_BRIGHTNESS_DEC>;
+			bindings = <&bt BT_CLR &trans &rgb_ug RGB_TOG>;
+			sensor-bindings = <&def_lshft>;
 		};
 	};
 };
